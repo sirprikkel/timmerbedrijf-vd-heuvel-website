@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact — Timmerbedrijf Van den Heuvel | Dieden</title>
+  <meta name="description" content="Neem contact op met Timmerbedrijf Van den Heuvel in Dieden voor maat keukens, kozijnen, ramen, deuren en interieurbouw.">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: { extend: {
+        colors: { primary: '#0891B2', secondary: '#22D3EE', cta: '#22C55E', bg: '#ECFEFF', txt: '#164E63' },
+        fontFamily: { display: ['Amatic SC','sans-serif'], sans: ['Cabin','sans-serif'] }
+      }}
+    }
+  </script>
+  <style>@import url('https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&family=Cabin:wght@400;500;600;700&display=swap');</style>
+  <script defer src="https://analytics.code-lieshout.nl/script.js" data-website-id="01315d6f-dc84-4118-83c9-071049a7e3ab"></script>
+</head>
+<body class="font-sans text-txt bg-white">
+
+  <!-- Navbar -->
+  <nav class="fixed top-0 w-full bg-white/95 backdrop-blur-sm z-50 border-b border-gray-100">
+    <div class="max-w-6xl mx-auto px-4 py-3 flex items-center justify-between">
+      <a href="index.html" class="font-display text-3xl font-bold text-primary">Timmerbedrijf vd Heuvel</a>
+      <div class="hidden md:flex items-center gap-8 text-sm font-medium">
+        <a href="keukens.html" class="hover:text-primary transition-colors duration-200 cursor-pointer">Keukens</a>
+        <a href="kozijnen.html" class="hover:text-primary transition-colors duration-200 cursor-pointer">Kozijnen & Deuren</a>
+        <a href="contact.html" class="text-primary font-semibold">Contact</a>
+        <a href="tel:0486412070" class="bg-cta text-white px-4 py-2 rounded-lg hover:bg-green-600 transition-colors duration-200 cursor-pointer">0486 412 070</a>
+      </div>
+      <button id="hamburger" class="md:hidden cursor-pointer p-2" aria-label="Menu">
+        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/></svg>
+      </button>
+    </div>
+    <div id="mobile-menu" class="hidden md:hidden bg-white border-t border-gray-100 px-4 pb-4">
+      <a href="keukens.html" class="block py-2 hover:text-primary transition-colors duration-200">Keukens</a>
+      <a href="kozijnen.html" class="block py-2 hover:text-primary transition-colors duration-200">Kozijnen & Deuren</a>
+      <a href="contact.html" class="block py-2 text-primary font-semibold">Contact</a>
+      <a href="tel:0486412070" class="block mt-2 bg-cta text-white text-center px-4 py-2 rounded-lg">0486 412 070</a>
+    </div>
+  </nav>
+
+  <!-- Hero -->
+  <section class="pt-24 pb-12 bg-bg">
+    <div class="max-w-6xl mx-auto px-4">
+      <h1 class="font-display text-6xl md:text-8xl font-bold mb-4">Contact</h1>
+      <p class="text-lg max-w-2xl">Neem contact op met Timmerbedrijf Van den Heuvel voor een vrijblijvend gesprek.</p>
+    </div>
+  </section>
+
+  <!-- Contact Grid -->
+  <section class="py-16 bg-white">
+    <div class="max-w-6xl mx-auto px-4 grid md:grid-cols-2 gap-12">
+      
+      <!-- Formulier -->
+      <div>
+        <h2 class="font-display text-4xl font-bold mb-6">Stuur een bericht</h2>
+        <form action="mailto:timvdheuvel13@outlook.com" method="post" enctype="text/plain" class="space-y-4">
+          <div>
+            <label class="block text-sm font-medium mb-1">Naam *</label>
+            <input type="text" name="naam" required class="w-full border border-gray-200 rounded-lg px-4 py-3 text-sm focus:outline-none focus:ring-2 focus:ring-primary/50 transition-all duration-200">
+          </div>
+          <div>
+            <label class="block text-sm font-medium mb-1">Bedrijf</label>
+            <input type="text" name="bedrijf" class="w-full border border-gray-200 rounded-lg px-4 py-3 text-sm focus:outline-none focus:ring-2 focus:ring-primary/50 transition-all duration-200">
+          </div>
+          <div>
+            <label class="block text-sm font-medium mb-1">E-mail *</label>
+            <input type="email" name="email" required class="w-full border border-gray-200 rounded-lg px-4 py-3 text-sm focus:outline-none focus:ring-2 focus:ring-primary/50 transition-all duration-200">
+          </div>
+          <div>
+            <label class="block text-sm font-medium mb-1">Telefoon</label>
+            <input type="tel" name="telefoon" class="w-full border border-gray-200 rounded-lg px-4 py-3 text-sm focus:outline-none focus:ring-2 focus:ring-primary/50 transition-all duration-200">
+          </div>
+          <div>
+            <label class="block text-sm font-medium mb-1">Onderwerp</label>
+            <select name="onderwerp" class="w-full border border-gray-200 rounded-lg px-4 py-3 text-sm focus:outline-none focus:ring-2 focus:ring-primary/50 transition-all duration-200 cursor-pointer">
+              <option value="">Kies een onderwerp...</option>
+              <option value="keuken">Maat keuken</option>
+              <option value="kozijnen">Kozijnen, ramen of deuren</option>
+              <option value="interieurbouw">Interieurbouw</option>
+              <option value="anders">Anders</option>
+            </select>
+          </div>
+          <div>
+            <label class="block text-sm font-medium mb-1">Bericht *</label>
+            <textarea name="bericht" rows="5" required class="w-full border border-gray-200 rounded-lg px-4 py-3 text-sm focus:outline-none focus:ring-2 focus:ring-primary/50 transition-all duration-200"></textarea>
+          </div>
+          <button type="submit" class="bg-cta text-white px-8 py-3 rounded-lg font-semibold hover:bg-green-600 transition-colors duration-200 cursor-pointer">Verstuur bericht</button>
+        </form>
+      </div>
+
+      <!-- Contactgegevens -->
+      <div>
+        <h2 class="font-display text-4xl font-bold mb-6">Gegevens</h2>
+        <div class="space-y-6">
+          <div>
+            <h3 class="font-semibold mb-1">Adres</h3>
+            <p class="text-sm">Poelstraat 13<br>5353 KJ Dieden (gem. Oss)<br>Noord-Brabant</p>
+          </div>
+          <div>
+            <h3 class="font-semibold mb-1">Telefoon</h3>
+            <a href="tel:0486412070" class="text-primary hover:underline cursor-pointer">0486 412 070</a>
+          </div>
+          <div>
+            <h3 class="font-semibold mb-1">E-mail</h3>
+            <a href="mailto:timvdheuvel13@outlook.com" class="text-primary hover:underline cursor-pointer">timvdheuvel13@outlook.com</a>
+          </div>
+          <div>
+            <h3 class="font-semibold mb-1">KvK</h3>
+            <p class="text-sm">16072036</p>
+          </div>
+          <div>
+            <a href="https://maps.google.com/?q=Poelstraat+13+5353KJ+Dieden" target="_blank" class="inline-flex items-center gap-2 bg-primary text-white px-6 py-3 rounded-lg font-semibold hover:bg-cyan-700 transition-colors duration-200 cursor-pointer">
+              <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"/><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"/></svg>
+              Route plannen
+            </a>
+          </div>
+        </div>
+
+        <!-- Google Reviews -->
+        <div class="mt-10 p-6 bg-bg rounded-xl">
+          <div class="flex items-center gap-2 mb-4">
+            <span class="text-2xl">⭐</span>
+            <span class="font-display text-3xl font-bold">5.0 op Google</span>
+          </div>
+          <p class="text-sm italic">"Goed vakwerk en stukken goedkoper dan anderen, aanrader."</p>
+          <p class="text-xs mt-2 font-medium">— RelexZ Massage Chairs</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Map embed -->
+  <section class="h-80">
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2480!2d5.5225!3d51.7925!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47c6f8a3e2e6f1a9%3A0x1234567890!2sPoelstraat+13%2C+5353+KJ+Dieden!5e0!3m2!1snl!2snl!4v1234567890" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-txt text-white py-12">
+    <div class="max-w-6xl mx-auto px-4 grid md:grid-cols-3 gap-8">
+      <div>
+        <h3 class="font-display text-3xl font-bold mb-4">Timmerbedrijf vd Heuvel</h3>
+        <p class="text-sm opacity-80">Poelstraat 13<br>5353 KJ Dieden (gem. Oss)</p>
+      </div>
+      <div>
+        <h4 class="font-semibold mb-4">Diensten</h4>
+        <ul class="text-sm opacity-80 space-y-2">
+          <li><a href="keukens.html" class="hover:text-secondary cursor-pointer">Maat keukens</a></li>
+          <li><a href="kozijnen.html" class="hover:text-secondary cursor-pointer">Kozijnen, ramen & deuren</a></li>
+          <li><a href="contact.html" class="hover:text-secondary cursor-pointer">Interieurbouw</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4 class="font-semibold mb-4">Contact</h4>
+        <ul class="text-sm opacity-80 space-y-2">
+          <li><a href="tel:0486412070" class="hover:text-secondary cursor-pointer">0486 412 070</a></li>
+          <li><a href="mailto:timvdheuvel13@outlook.com" class="hover:text-secondary cursor-pointer">timvdheuvel13@outlook.com</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="max-w-6xl mx-auto px-4 mt-8 pt-8 border-t border-white/20 text-center text-xs opacity-60">
+      <p>© 2025 Timmerbedrijf Van den Heuvel B.V. | KvK 16072036</p>
+      <p class="mt-1">Gebouwd door <a href="https://www.code-lieshout.nl" class="underline hover:text-secondary cursor-pointer">Code Lieshout</a></p>
+    </div>
+  </footer>
+
+  <script>
+    document.getElementById('hamburger').addEventListener('click', () => {
+      document.getElementById('mobile-menu').classList.toggle('hidden');
+    });
+  </script>
+</body>
+</html>
